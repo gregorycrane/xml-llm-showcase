@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML to HTML Conversion Showcase</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dfe2e5;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f6f8fa;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .description {
+            font-style: italic;
+            color: #586069;
+        }
+    </style>
+</head>
+<body>
+    <h1>XML to HTML Conversion Showcase</h1>
+    <p>This page provides examples of TEI XML documents that have been transformed into static HTML pages using Python and Jupyter Notebooks.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Project / Document Title</th>
+                <th>View HTML</th>
+                <th>View Notebook</th>
+                <th>View Source XML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <strong>A Comparative Greek and Latin Grammar</strong>
+                    <div class="description">J. E. Russell (1902)</div>
+                </td>
+                <td><a href="russell_grammar/russell_grammar.html" target="_blank">View Page</a></td>
+                <td><a href="russell_grammar/greeklatgramm.ipynb" target="_blank">View Notebook</a></td>
+                <td><a href="russell_grammar/russell1902-comp-greek-latin-grammar.xml" target="_blank">View XML</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Homeric Greek: A Three-Pane Viewer</strong>
+                    <div class="description">Clyde Pharr (2025 ed.)</div>
+                </td>
+                <td><a href="pharr_homeric_greek/homeric_greek_three_pane.html" target="_blank">View Page</a></td>
+                <td><a href="pharr_homeric_greek/pharr-gemini.ipynb" target="_blank">View Notebook</a></td>
+                <td><a href="pharr_homeric_greek/pharr2025.xml" target="_blank">View XML</a></td>
+            </tr>
+            </tbody>
+    </table>
+
+</body>
+</html>
