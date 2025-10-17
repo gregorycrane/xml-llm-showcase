@@ -50,8 +50,10 @@
 <body>
     <h1>XML to HTML Conversion Showcase</h1>
     <p>This page provides examples of TEI XML documents that have been transformed into static HTML pages using Python and Jupyter Notebooks.</p>
-    <p>The text is based on OCR output from the Hathi Trust. I have corrected errors as I have seen them in an opportunistic fashion. These files are all works in progress that are, I hope, useful for many purposes now but all can benefit from more work.</p>
-    <p>In each case, I have used LLMs (so far mainly Gemini 2.5) to write Python programs to go from TEI XML to HTML. The Parallel Latin-Greek Grammar and Pharr's Homeric Greek have some relatively complicated interactivity.</p>
+        <p>The text is based on OCR output from the Hathi Trust. I have corrected errors as I have seen them in an opportunistic fashion. These files are all works in progress that are, I hope, useful for many purposes now but all can benefit from more work. That said, the quality of the base OCR-output from Hathi (which receives its OCR from Google) has gotten remarkably good. Until c. 2023, mixed Greek and Roman script was awful -- OCR found it oddly difficult to switch between scripts. Now, the base OCR for Greek + Roman script is (assuming good scans and clear print) an excellent start.</p>
+    <p>I used Gemini Pro 2.5 to convert the raw OCR-generated text into TEI XML. I found that it was best to give a very general prompt asking for TEI XML because Gemini often had better ideas about how to structure the output that I would have suggested, because, after decades of work, my instinct is to produce something relatively simple. I learned quite a bit working with Gemini. Gemini generated the tables and paradigms in Pharr, for example, from the raw OCR text. I am astonished at how well it did. Some tables need correction. Only one table was too complex to yield useful results (table 1 on pp. lx-lxi)</p>
+    <p>Likewise, Gemini did a very solid job capturing the tabular format of the Russell Latin-Greek grammar.</p>
+<p>In each case, I have used LLMs (so far mainly Gemini 2.5) to write Python programs to go from TEI XML to HTML. The Parallel Latin-Greek Grammar and Pharr's Homeric Greek have some relatively complicated interactivity.</p>
 
     <table>
         <thead>
